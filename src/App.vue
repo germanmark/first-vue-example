@@ -1,17 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <PageHeader greeting="Welcome" :myNum="8"/> <!-- Usage -->
+    <PageFooter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import PageHeader from './components/PageHeader.vue' //Import
+import PageFooter from './components/PageFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    PageHeader, //Registration
+    PageFooter
   }
 }
 </script>
@@ -23,6 +29,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: bisque;
+}
+div{
+  background-color: bisque;
+}
+*{
+  background-color: bisque;
 }
 </style>
